@@ -3,7 +3,7 @@ Short, working definitions so I can talk to physicists without getting lost :D.
 
 ---
 
-## 🧱 Core Physics & Particles
+# 🧱 Core Physics & Particles
 
 ### **Cosmic ray**
 High-energy charged particle arriving from space (mostly protons, plus helium, electrons, heavier nuclei, and a small fraction of antiparticles).
@@ -17,7 +17,7 @@ Hypothetical form of matter that does not emit light but affects gravity. AMS-02
 
 ---
 
-## ⚛️ Kinematics & Motion in Magnetic Fields
+# ⚛️ Kinematics & Motion in Magnetic Fields
 
 ### **Charge (q)**
 Determines how strongly a particle feels electromagnetic forces and in which direction it bends in a magnetic field (sign).
@@ -30,7 +30,7 @@ p \approx \gamma m v
 $$
 
 ### **Rigidity (R)**
-Momentum per unit charge. Defined as:
+Momentum per unit charge:
 
 $$
 R = \frac{p}{|Z|e}
@@ -39,99 +39,164 @@ $$
 AMS-02 often reports measurements in rigidity rather than raw momentum.
 
 ### **Lorentz force**
-Force on a charged particle in a magnetic field:
 
 $$
 \vec{F} = q \, \vec{v} \times \vec{B}
 $$
 
-This leads to circular or helical motion.
+Determines curvature and helical motion.
 
 ### **Curvature radius (r)**
-In a uniform magnetic field:
 
 $$
 r = \frac{p}{|q|B}
 $$
 
-Measuring curvature \(r\) → estimate momentum \(p\).  
-Direction of curvature → determines charge sign.
+Measure \(r\) → determine momentum \(p\).  
+Direction of curvature → charge sign.
 
 ---
 
-## 📐 Detector & Measurement Concepts
+# 📐 Detector & Measurement Concepts
 
 ### **Flux (Φ)**
-Number of particles per unit area, per unit time, per unit solid angle, per unit energy (or rigidity):
 
 $$
 \Phi \approx \frac{N_{\text{signal}}}{A \cdot T \cdot \epsilon \cdot \Delta E}
 $$
 
+Particles per area, time, solid angle, and energy/rigidity.
+
 ### **Acceptance (A)**
-Effective area × solid angle of the detector for a given selection. Includes geometry + cuts.
+Effective area × solid angle of the detector including geometry + cuts.
 
 ### **Exposure time (T)**
-Total “live time” during which the detector was recording valid data.
+Total “live” time during which data were recorded.
 
 ### **Efficiency (ε)**
-Probability that a real particle crossing the detector is detected AND passes all cuts.
+Probability a real particle is detected AND passes all cuts.
 
 ### **dE/dx (energy loss per unit length)**
-Average energy lost by a charged particle per unit path length.  
-Different particles leave different dE/dx signatures → useful for identification.
+Charged-particle energy loss in matter.  
+Useful for particle identification.
+
+### **E/R ratio (Energy–Rigidity ratio)**
+
+$$
+\frac{E_{\text{ECAL}}}{R_{\text{Tracker}}}
+$$
+
+- Electrons/positrons → \(E/R \approx 1\) (full energy deposition).
+- Protons → \(E/R \ll 1\).
+
+Used with BDTs for AMS lepton–hadron separation.
 
 ---
 
-## 🛰️ AMS-02 Subsystems
+# 🛰️ AMS-02 Subsystems
 
 ### **TRD – Transition Radiation Detector**
-Separates electrons/positrons from protons using transition radiation + energy deposit patterns.
+Separates \(e^\pm\) from protons using transition radiation + energy deposit patterns.
 
 ### **TOF – Time of Flight**
-Measures time taken to cross scintillator planes → gives speed \( \beta = v/c \) and direction (up-going vs down-going).
+Measures speed \( \beta = v/c \) and direction of travel.
 
 ### **Silicon Tracker**
-Measures the trajectory inside the magnetic field → determines curvature, rigidity, and charge sign.
+Reconstructs particle trajectory → determines rigidity and charge sign.
 
 ### **ECAL – Electromagnetic Calorimeter**
-Absorbs electrons, positrons, and photons; measures energy.  
-Shower shape helps classify particle type.
+Measures energy and shower shape of leptons/photons.
 
 ### **RICH – Ring Imaging Cherenkov Detector**
-Measures velocity very precisely using Cherenkov light.  
-Helps isotope separation + particle ID.
+Measures velocity with Cherenkov light → isotope separation.
+
+### **ACC – Anti-Coincidence Counters**
+Reject side-entering particles to maintain clean event samples.
 
 ---
 
-## 🌞 Radiation & Space Environment
+# 🌌 Cosmic-Ray Composition & Astrophysical Sources
+
+### **ISM – Interstellar Medium**
+Gas + dust filling space between stars.  
+Cosmic rays diffuse, scatter, and undergo spallation in the ISM.
+
+### **B/C ratio (Boron-to-Carbon ratio)**
+Key observable in cosmic-ray propagation:
+
+- **Boron**: mostly **secondary**, produced by spallation in the ISM.  
+- **Carbon**: mostly **primary**.
+
+Thus:
+
+$$
+\frac{B}{C}(E)
+$$
+
+informs us about:
+- amount of material traversed  
+- diffusion coefficient  
+- transport models  
+- distinguishing dark-matter vs pulsar/SNR scenarios
+
+AMS-02 provides the highest precision B/C ratio measurements to date.
+
+### **SNRs – Supernova Remnants**
+Shock regions from exploded massive stars.  
+Leading source candidates for **primary cosmic-ray acceleration** via diffusive shock acceleration.
+
+Contribute to:
+- hardening in electron spectra  
+- possible features in nuclei spectra
+
+### **PWNe – Pulsar Wind Nebulae**
+Highly magnetized bubbles powered by pulsars.
+
+Why important:
+- Produce large numbers of high-energy **e⁺/e⁻ pairs**  
+- Strong candidate explanation for the **positron excess** seen by AMS-02  
+- Compete with dark-matter interpretations
+
+---
+
+# 🌞 Radiation & Space Environment
 
 ### **Cherenkov radiation**
-Light emitted when a charged particle travels faster than the phase velocity of light in a medium.  
-Forms a cone → used by RICH.
+Emitted when a charged particle exceeds the phase velocity of light in a medium → used in RICH.
 
 ### **Geomagnetic cutoff**
-Minimum rigidity a cosmic ray must have to reach a given location in Earth’s magnetosphere.  
-Low-rigidity particles are deflected away.
+Minimum rigidity required for CRs to enter Earth’s magnetosphere at a given latitude.
 
 ### **Solar modulation**
-Suppression of low-energy cosmic rays due to solar wind + solar magnetic activity.  
-Higher solar activity → greater suppression.
+Suppression of low-energy CRs due to solar wind + solar magnetic activity.
 
 ---
 
-## 🧪 Data & Analysis Terms
+# 🧪 Data Analysis & Simulation Terms
 
 ### **Event**
-A single recorded passage of a particle through the detector (all hits, times, energies, etc.).
+One recorded particle passage with all detector information.
 
 ### **Selection / cuts**
-Logical criteria deciding whether an event is kept (quality cuts, ID cuts, geometry cuts, etc.).
+Logical filters for quality, geometry, particle ID, etc.
 
 ### **Background**
-Events mimicking signal but not the particle/process of interest.
+Non-signal events that mimic signal.
 
 ### **Systematic uncertainty**
-Non-statistical uncertainties from imperfect knowledge of efficiencies, calibrations, models, etc.  
-Not reduced by collecting more data.
+Non-statistical uncertainties (calibration, efficiency, modeling).
+
+### **Monte Carlo simulations (MC)**
+Computer simulations modeling:
+
+- detector response  
+- cosmic-ray propagation  
+- shower formation in ECAL  
+- acceptance & efficiency  
+- charge confusion  
+- background estimation  
+
+AMS uses **Geant4-based full simulations** and fast MC for analysis and systematics.
+
+---
 
