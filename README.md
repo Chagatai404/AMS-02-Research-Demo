@@ -11,7 +11,7 @@ The project combines **physics fundamentals**, **data science**, and **machine-l
 | Folder | Purpose |
 |--------|----------|
 | `notes/` | Written notes, summaries, and conceptual explanations of AMS-02 physics and detectors |
-| `notebooks/` | R / Python notebooks for simulations, analysis, and visualization |
+| `notebooks/` | Python notebooks for simulations, analysis, and visualization |
 | `data/` | Synthetic or public datasets used for demos |
 | `figures/` | Generated plots and diagrams |
 | `references/` | Research papers, PDFs, and key resources |
@@ -47,20 +47,18 @@ The project combines **physics fundamentals**, **data science**, and **machine-l
 - [AMS-02 Experiment – NASA Overview](https://www.nasa.gov/mission_pages/station/research/experiments/AMS-02.html)  
 - [AMS Collaboration – CERN Page](https://ams.cern/)  
 - [METU IVMER – AMS-02 Project](https://ivmer.metu.edu.tr/ams-02-ab-taek-ortakligi)  
-- Demirköz et al., *Radiation Testing and Detector Calibration for Space Missions*  
-- AMS-02 detector subsystem technical notes (TRD, TOF, Tracker, ECAL, RICH)
 
 ---
 
 ## 🧩 Current Goal
 
-To integrate **data cleaning, visualization, and statistical analysis** skills from my avionics background with a deep understanding of cosmic-ray physics and AMS-02 instrumentation, ultimately contributing to **real AMS-02 data analysis** or related IVMER projects.
+To integrate **data cleaning, visualization, and statistical analysis** skills from my statistics bachelor's and avionics background with a deep understanding of cosmic-ray physics and AMS-02 instrumentation, ultimately contributing to **real AMS-02 data analysis** or related IVMER projects.
 
 ---
 
 ## ✉️ Contact
 
-For collaboration inquiries or project updates, feel free to reach out via GitHub issues or email once the public contact address is added.
+For collaboration inquiries or project updates, feel free to reach out via GitHub issues or email cagatayokty@gmail.com.
 
 ---
 
