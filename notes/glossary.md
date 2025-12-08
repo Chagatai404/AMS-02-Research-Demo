@@ -77,6 +77,32 @@ $$
 Measure \(r\) → determine momentum \(p\).  
 Direction of curvature → charge sign.
 
+### **Cyclotron motion**
+The circular (or helical) motion of a charged particle in a uniform magnetic field.
+
+In a uniform \(\vec B\) field, a particle with charge \(q\), mass \(m\), and velocity \(\vec v\) experiences the Lorentz force:
+
+\[
+\vec F = q\, \vec v \times \vec B
+\]
+
+The component of \(\vec v\) **perpendicular** to \(\vec B\) causes circular motion with **cyclotron frequency**:
+
+\[
+\omega_c = \frac{|q| B}{\gamma m}
+\]
+
+(\(\omega_c = |q|B/m\) in the non-relativistic limit), and **radius**:
+
+\[
+r = \frac{p_\perp}{|q|B}
+\]
+
+where \(p_\perp\) is the momentum component perpendicular to \(\vec B\).
+
+If there is also a velocity component **parallel** to \(\vec B\), the motion becomes a **helix** (spiral) along the field lines.  
+Cyclotron motion is the basic picture behind AMS-02 track bending, rigidity measurement, and the definition of the curvature radius.
+
 ---
 
 # 📐 Detector & Measurement Concepts
