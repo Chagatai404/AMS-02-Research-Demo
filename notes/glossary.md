@@ -74,33 +74,33 @@ $$
 r = \frac{p}{|q|B}
 $$
 
-Measure \(r\) → determine momentum \(p\).  
+Measure $r$ → determine momentum $p$.  
 Direction of curvature → charge sign.
 
 ### **Cyclotron motion**
 The circular (or helical) motion of a charged particle in a uniform magnetic field.
 
-In a uniform \(\vec B\) field, a particle with charge \(q\), mass \(m\), and velocity \(\vec v\) experiences the Lorentz force:
+In a uniform $\vec B$ field, a particle with charge $q$, mass $m$, and velocity $\vec v$ experiences the Lorentz force:
 
-\[
+$$
 \vec F = q\, \vec v \times \vec B
-\]
+$$
 
-The component of \(\vec v\) **perpendicular** to \(\vec B\) causes circular motion with **cyclotron frequency**:
+The component of $\vec v$ **perpendicular** to $\vec B$ causes circular motion with **cyclotron frequency**:
 
-\[
+$$
 \omega_c = \frac{|q| B}{\gamma m}
-\]
+$$
 
-(\(\omega_c = |q|B/m\) in the non-relativistic limit), and **radius**:
+($\omega_c = |q|B/m$ in the non-relativistic limit), and **radius**:
 
-\[
+$$
 r = \frac{p_\perp}{|q|B}
-\]
+$$
 
-where \(p_\perp\) is the momentum component perpendicular to \(\vec B\).
+where $p_\perp$ is the momentum component perpendicular to $\vec B$.
 
-If there is also a velocity component **parallel** to \(\vec B\), the motion becomes a **helix** (spiral) along the field lines.  
+If there is also a velocity component **parallel** to $\vec B$, the motion becomes a **helix** (spiral) along the field lines.  
 Cyclotron motion is the basic picture behind AMS-02 track bending, rigidity measurement, and the definition of the curvature radius.
 
 ---
@@ -134,8 +134,8 @@ $$
 \frac{E_{\text{ECAL}}}{R_{\text{Tracker}}}
 $$
 
-- Electrons/positrons → \(E/R \approx 1\) (full energy deposition).
-- Protons → \(E/R \ll 1\).
+- Electrons/positrons → $E/R \approx 1$ (full energy deposition).
+- Protons → $E/R \ll 1$.
 
 Used with BDTs for AMS lepton–hadron separation.
 
@@ -144,27 +144,27 @@ Used with BDTs for AMS lepton–hadron separation.
 # 🛰️ AMS-02 Subsystems
 
 ### **TRD – Transition Radiation Detector**
-Separates \(e^\pm\) from protons using transition radiation + energy deposit patterns.
+Separates $e^\pm$ from protons using transition radiation + energy deposit patterns.
 
 ### **TOF – Time of Flight**
-Measures speed \( \beta = v/c \) and direction of travel.
+Measures speed $ \beta = v/c $ and direction of travel.
 
 ### **Silicon Tracker**
 Reconstructs particle trajectory → determines rigidity and charge sign.
-###     **Si-μstrip sensors (Silicon microstrip sensors)**
-    Thin (~300 μm) silicon wafers patterned with many parallel microscopic readout strips.  
-    When a charged particle crosses the silicon, it creates electron–hole pairs that drift under an electric field and are collected by nearby strips.
 
-    Each strip acts as a tiny independent detector, giving position accuracy of **5–10 μm**.
+### **Si-μstrip sensors (Silicon microstrip sensors)**
+Thin (~300 μm) silicon wafers patterned with many parallel microscopic readout strips.  
+When a charged particle crosses the silicon, it creates electron–hole pairs that drift under an electric field and are collected by nearby strips.
 
-    Used in AMS-02 to:
-    - precisely measure particle trajectories  
-    - determine curvature inside the magnetic field  
-    - identify charge sign  
-    - achieve high-resolution 3D track reconstruction  
+Each strip acts as a tiny independent detector, giving position accuracy of **5–10 μm**.
 
-    AMS uses hundreds of Si-μstrip ladders arranged in X and Y layers to reconstruct the full 3D path of each cosmic ray.
+Used in AMS-02 to:
+- precisely measure particle trajectories  
+- determine curvature inside the magnetic field  
+- identify charge sign  
+- achieve high-resolution 3D track reconstruction  
 
+AMS uses hundreds of Si-μstrip ladders arranged in X and Y layers to reconstruct the full 3D path of each cosmic ray.
 
 ### **ECAL – Electromagnetic Calorimeter**
 Measures energy and shower shape of leptons/photons.
@@ -248,15 +248,15 @@ These classes arise **naturally from AMS-02 data**: when spectral indices, harde
 A change in the slope of a cosmic-ray energy or rigidity spectrum where the spectrum becomes **less steep (flattens)** at higher energies.  
 Cosmic-ray fluxes usually follow a power-law:
 
-\[
+$$
 \Phi(R) \propto R^{-\gamma}
-\]
+$$
 
 A hardening occurs when the high-energy spectral index becomes smaller:
 
-\[
+$$
 \gamma_{\text{high}} < \gamma_{\text{low}}
-\]
+$$
 
 This means high-energy particles are **more abundant** than expected from a single power-law.  
 AMS-02 observed spectral hardening around **200–300 GV** in many species, including protons, helium, and heavier nuclei.  
@@ -265,14 +265,14 @@ The effect suggests changes in **source acceleration**, **diffusion properties**
 ### **p̄/p ratio (antiproton-to-proton ratio)**
 The ratio of cosmic-ray antiprotons to protons as a function of rigidity:
 
-\[
+$$
 \frac{\bar{p}}{p} = \frac{\text{antiproton flux}}{\text{proton flux}}
-\]
+$$
 
-Antiprotons (\(\bar{p}\)) are produced mainly as **secondary particles** when high-energy cosmic-ray protons collide with interstellar gas in the ISM.  
+Antiprotons ($\bar{p}$) are produced mainly as **secondary particles** when high-energy cosmic-ray protons collide with interstellar gas in the ISM.  
 Standard models predict that the p̄/p ratio should **decrease** with increasing rigidity because secondary production becomes less efficient at high energies.
 
-AMS-02 discovered that the p̄/p ratio **flattens** above \(\sim 60\)–\(100\) GV, rather than continuing to fall.  
+AMS-02 discovered that the p̄/p ratio **flattens** above $\sim 60$–$100$ GV, rather than continuing to fall.  
 This behavior:
 - is near the limit of what conventional secondary models predict,  
 - may hint at **additional sources** of antiprotons (e.g., dark matter annihilation, SNR interactions),  
@@ -283,13 +283,13 @@ Used together with the B/C ratio to test whether cosmic-ray antimatter is purely
 ### **Dark matter annihilation**
 A theoretical process in which two dark matter particles destroy each other and produce Standard-Model particles:
 
-\[
+$$
 \chi + \chi \rightarrow \text{SM particles (} e^+, e^-, \bar{p}, \gamma, \nu, \dots)
-\]
+$$
 
 Whether annihilation occurs depends on the type of dark matter:
-- **Dirac DM:** has a distinct antimatter partner (\(\chi\) and \(\bar{\chi}\)); annihilation is \(\chi + \bar{\chi}\).
-- **Majorana DM:** particle is its own antiparticle (\(\chi = \bar{\chi}\)); annihilation is \(\chi + \chi\).
+- **Dirac DM:** has a distinct antimatter partner ($\chi$ and $\bar{\chi}$); annihilation is $\chi + \bar{\chi}$.  
+- **Majorana DM:** particle is its own antiparticle ($\chi = \bar{\chi}$); annihilation is $\chi + \chi$.  
 - **Asymmetric DM:** anti–dark matter was depleted early, so present-day annihilation is nearly zero.
 
 If annihilation occurs today in the Milky Way halo, it could produce measurable excesses in:
@@ -300,7 +300,6 @@ If annihilation occurs today in the Milky Way halo, it could produce measurable 
 
 AMS-02 searches for these signatures in cosmic-ray data.  
 An unexpected rise in e⁺, flattening in p̄/p, or detection of antihelium could indicate dark matter annihilation or decay.
-
 
 ---
 
@@ -323,7 +322,6 @@ The cutoff depends strongly on latitude:
 AMS-02 measures cosmic rays along an orbit of 51.6° inclination, so the geomagnetic cutoff varies continuously, **affecting low-rigidity (<10 GV) flux measurements**.
 
 The cutoff must be accounted for to avoid contamination by atmospheric secondaries and to correctly determine the true cosmic-ray flux.
-
 
 ### **Solar modulation**
 The process by which the Sun’s magnetic field and solar wind alter the intensity and energy spectrum of cosmic rays before they reach Earth.
@@ -373,4 +371,3 @@ Computer simulations modeling:
 AMS uses **Geant4-based full simulations** and fast MC for analysis and systematics.
 
 ---
-
