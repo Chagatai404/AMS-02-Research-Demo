@@ -272,7 +272,7 @@ $$
 Antiprotons ($\bar{p}$) are produced mainly as **secondary particles** when high-energy cosmic-ray protons collide with interstellar gas in the ISM.  
 Standard models predict that the p̄/p ratio should **decrease** with increasing rigidity because secondary production becomes less efficient at high energies.
 
-AMS-02 discovered that the p̄/p ratio **flattens** above $\sim 60$–$100$ GV, rather than continuing to fall.  
+AMS-02 discovered that the p̄/p ratio **flattens** above $\sim 60–100$ GV, rather than continuing to fall.  
 This behavior:
 - is near the limit of what conventional secondary models predict,  
 - may hint at **additional sources** of antiprotons (e.g., dark matter annihilation, SNR interactions),  
@@ -371,4 +371,5 @@ Computer simulations modeling:
 AMS uses **Geant4-based full simulations** and fast MC for analysis and systematics.
 
 ---
+
 
