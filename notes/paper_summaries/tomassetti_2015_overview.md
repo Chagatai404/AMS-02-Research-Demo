@@ -5,14 +5,14 @@ PDF: *AMS-02 physics results, overview, and challenges* 【PDF citation: AMS-02 
 
 ---
 
-## 📝 1. Overview of the Paper
+## 1. Overview
 This paper provides a concise but rich overview of the **AMS-02 detector**, and its early physics results up to ~500 GeV for leptons. Using redundant particle-ID subdetectors, AMS achieves **unprecedented separation** between electrons, positrons, and hadrons.  
 
 AMS extends measurements far beyond previous experiments, revealing unexpected behavior above *10 GeV*.
 
 ---
 
-## 🧩 2. AMS-02 Detector Design:
+## 2. AMS-02 Detector Design:
 The introduction lists all major subsystems:
 
 - **Silicon Tracker** – built of 9 planes of silicon micro-strip detectors, reconstructs rigidity \(R = p/Ze\) and charge sign  
@@ -29,7 +29,7 @@ The subsystems ensure a correct identification of particles and allows for detec
 Page 2 shows a Y–Z cross-section of AMS-02 illustrating the vertical stack of TRD → TOF → Magnet → RICH → ECAL, and trackers distributed along the system.  
 ---
 
-## 🔬 3. Measurement Redundancy & Clean Lepton Selection
+## 3. Measurement Redundancy & Clean Lepton Selection
 Highlighted in yellow on page 2, AMS uses **three independent lepton/hadron separation methods**:
 
 1. TRD Likelihood Estimator  
@@ -38,7 +38,7 @@ Highlighted in yellow on page 2, AMS uses **three independent lepton/hadron sepa
 
 ---
 
-## 🌍 4. ISS Orbit & Data Quality
+## 4. ISS Orbit & Data Quality
 
 From the paper:
 - AMS orbits at 400 km with 51.6° inclination  
@@ -50,7 +50,7 @@ This gives confidence in long-term stability for flux studies.
 
 ---
 
-## 📈 5. Key Physics Results
+## 5. Key Physics Results
 
 ### **5.1 Positron Fraction Measurement**
 Some notes:
@@ -78,7 +78,7 @@ This may indicate a new high-energy source.
 
 ---
 
-## 🧪 6. Charge-Confusion & Systematics
+## 6. Charge-Confusion & Systematics
 The paper’s key concerns:
 
 - **Charge-confusion** from tracker resolution  
@@ -96,7 +96,7 @@ vs
 **NOTE:** Look into how later.
 ---
 
-## 🧭 7. Challenges & Open Questions
+## 7. Challenges & Open Questions
 Some issues noted in the paper:
 
 - Origin of high-energy positron excess  
@@ -108,7 +108,7 @@ These are still active research questions today.
 
 ---
 
-## 📌 8. Key Equations (implied in the paper)
+## 8. Key Equations (implied in the paper)
 
 **Rigidity**  
 $$
@@ -127,7 +127,7 @@ $$
 
 ---
 
-## 🗂️ 9. Follow-Up Reading
+## 9. Follow-Up Reading
 
 - TRD lepton/hadron separation (BDT)  
 - ECAL shower variables & E/R method  
