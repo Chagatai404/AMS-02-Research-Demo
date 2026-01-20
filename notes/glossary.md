@@ -147,7 +147,7 @@ Used with BDTs for AMS lepton–hadron separation.
 Separates $e^\pm$ from protons using transition radiation + energy deposit patterns.
 
 ### **TOF – Time of Flight**
-Measures speed $ \beta = v/c $ and direction of travel.
+Measures speed $\beta = v/c$ and direction of travel.
 
 ### **Silicon Tracker**
 Reconstructs particle trajectory → determines rigidity and charge sign.
@@ -371,3 +371,4 @@ Computer simulations modeling:
 AMS uses **Geant4-based full simulations** and fast MC for analysis and systematics.
 
 ---
+
