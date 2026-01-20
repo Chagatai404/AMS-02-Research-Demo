@@ -33,20 +33,20 @@ $$
 A relativistic correction factor that appears in the momentum and energy of high-speed particles.  
 Defined as:
 
-\[
+$$
 \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
-\]
+$$
 
-where \(v\) is the particle’s velocity and \(c\) is the speed of light.
+where $v$ is the particle’s velocity and $c$ is the speed of light.
 
-- For slow (non-relativistic) particles: \(\gamma \approx 1\).  
-- For cosmic rays, \(v \approx c\), so \(\gamma\) can be **hundreds or thousands**.
+- For slow (non-relativistic) particles: $\gamma \approx 1$.  
+- For cosmic rays, $v \approx c$, so $\gamma$ can be **hundreds or thousands**.
 
 Used in the relativistic momentum formula:
 
-\[
+$$
 p = \gamma m v,
-\]
+$$
 
 and in calculations relating energy, momentum, and rigidity.  
 Crucial for AMS-02 since most detected cosmic rays are ultra-relativistic.
