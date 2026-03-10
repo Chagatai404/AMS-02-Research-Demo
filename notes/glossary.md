@@ -60,6 +60,41 @@ $$
 
 AMS-02 often reports measurements in rigidity rather than raw momentum.
 
+### **β (beta) — Particle Velocity in Units of the Speed of Light**
+
+In high-energy physics, particle velocity is usually expressed as a fraction of the speed of light:
+
+$$
+\beta = \frac{v}{c}
+$$
+
+where:
+
+- \(v\) = particle velocity  
+- \(c\) = speed of light  
+
+Thus:
+
+$$
+0 \leq \beta < 1
+$$
+
+Cosmic rays detected by AMS-02 typically have velocities extremely close to the speed of light:
+
+| Particle energy | Typical β |
+|---|---|
+| ~1 GeV proton | ~0.87 |
+| ~10 GeV proton | ~0.996 |
+| >100 GeV cosmic ray | >0.9999 |
+
+β is closely related to the **Lorentz factor**:
+
+$$
+\gamma = \frac{1}{\sqrt{1-\beta^2}}
+$$
+
+Measurements of β are crucial because combining **velocity (β)** with **rigidity (R)** allows determination of the **particle mass**.
+
 ### **Lorentz force**
 
 $$
@@ -144,13 +179,82 @@ Used with BDTs for AMS lepton–hadron separation.
 # 🛰️ AMS-02 Subsystems
 
 ### **TRD – Transition Radiation Detector**
-Separates $e^\pm$ from protons using transition radiation + energy deposit patterns.
+
+Separates **electrons/positrons from protons**.
+
+Transition radiation is emitted when a charged particle crosses boundaries between materials with different dielectric constants.
+
+The radiation intensity increases approximately with the **Lorentz factor**:
+
+$$
+\gamma = \frac{1}{\sqrt{1-\beta^2}}
+$$
+
+Electrons (high γ) produce strong transition radiation, while protons produce weaker signals.
+
+Thus the TRD provides **electron–hadron discrimination**.
+
+---
 
 ### **TOF – Time of Flight**
-Measures speed $\beta = v/c$ and direction of travel.
+
+Measures particle velocity.
+
+If a particle travels distance \(L\) in time \(t\):
+
+$$
+v = \frac{L}{t}
+$$
+
+Velocity is usually expressed as:
+
+$$
+\beta = \frac{v}{c}
+$$
+
+The TOF system also determines:
+
+- particle **direction** (upward vs downward)
+- **trigger timing**
+
+Typical time resolution:
+
+~100–120 ps.
+
+---
 
 ### **Silicon Tracker**
-Reconstructs particle trajectory → determines rigidity and charge sign.
+Reconstructs the trajectory of charged particles inside the magnetic field.
+
+The curvature of the track determines the particle rigidity:
+
+$$
+R = \frac{p}{Ze}
+$$
+
+where:
+
+- \(p\) = particle momentum  
+- \(Z\) = charge number  
+
+The curvature radius in a magnetic field is:
+
+$$
+r = \frac{p_\perp}{|q|B}
+$$
+
+The tracker therefore measures:
+
+- particle **momentum**
+- **charge sign**
+- **trajectory**
+
+Typical spatial resolution:
+
+- ~10 μm (bending direction)  
+- ~30 μm (non-bending direction)
+
+---
 
 ### **Si-μstrip sensors (Silicon microstrip sensors)**
 Thin (~300 μm) silicon wafers patterned with many parallel microscopic readout strips.  
@@ -167,13 +271,72 @@ Used in AMS-02 to:
 AMS uses hundreds of Si-μstrip ladders arranged in X and Y layers to reconstruct the full 3D path of each cosmic ray.
 
 ### **ECAL – Electromagnetic Calorimeter**
-Measures energy and shower shape of leptons/photons.
+
+Measures particle **energy** and **shower structure**.
+
+The particle energy is obtained from the total deposited energy:
+
+$$
+E = \sum E_{\text{cells}}
+$$
+
+Particle identification uses the **Energy–Rigidity ratio**:
+
+$$
+\frac{E_{\text{ECAL}}}{R_{\text{Tracker}}}
+$$
+
+Interpretation:
+
+- electrons/positrons → \(E/R \approx 1\)  
+- hadrons → \(E/R \ll 1\)
+
+The ECAL also analyzes the **3D shower shape** to distinguish electromagnetic showers from hadronic showers.
+
+---
 
 ### **RICH – Ring Imaging Cherenkov Detector**
-Measures velocity with Cherenkov light → isotope separation.
+
+Measures particle velocity with very high precision using **Cherenkov radiation**.
+
+Cherenkov radiation occurs when a particle travels faster than the speed of light in a medium:
+
+$$
+v > \frac{c}{n}
+$$
+
+where \(n\) is the refractive index.
+
+The Cherenkov angle satisfies:
+
+$$
+\cos \theta_c = \frac{1}{n\beta}
+$$
+
+From the reconstructed Cherenkov ring, AMS obtains:
+
+- precise **β measurement**
+- **particle charge**
+- **isotope separation**
+
+Typical precision:
+
+$$
+\Delta\beta / \beta \sim 10^{-3}
+$$
+
+---
 
 ### **ACC – Anti-Coincidence Counters**
-Reject side-entering particles to maintain clean event samples.
+
+Detect particles entering the detector from the side.
+
+If the ACC registers a signal simultaneously with a tracker event, the event is rejected.
+
+Purpose:
+
+- reduce **background events**
+- ensure particles enter through the detector acceptance.
 
 ---
 
@@ -371,5 +534,3 @@ Computer simulations modeling:
 AMS uses **Geant4-based full simulations** and fast MC for analysis and systematics.
 
 ---
-
-
