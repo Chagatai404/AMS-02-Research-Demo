@@ -176,6 +176,33 @@ Used with BDTs for AMS lepton–hadron separation.
 
 ---
 
+### **Mass Determination**
+
+Combining rigidity and velocity measurements allows determination of particle mass.
+
+From:
+
+$$
+p = \gamma m v
+$$
+
+and
+
+$$
+R = \frac{p}{Ze}
+$$
+
+we obtain:
+
+$$
+m = \frac{p}{\gamma v}
+$$
+
+Thus AMS determines particle type by combining:
+
+- **momentum (tracker)**
+- **velocity (TOF / RICH)**
+
 # 🛰️ AMS-02 Subsystems
 
 ### **TRD – Transition Radiation Detector**
