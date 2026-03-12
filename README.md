@@ -25,10 +25,9 @@ The project combines **physics fundamentals**, **data science**, and **machine-l
 | **0** | Setup, glossary, reading list | `glossary.md`, repository structure |
 | **1** | Charged-particle motion in magnetic fields | Simulated helical tracks notebook |
 | **2** | AMS-02 subsystems and feature simulation | Tabular event data + classifier |
-| **3** | From counts to flux reconstruction | Toy flux analysis notebook |
+| **3** | From counts to flux reconstruction | Simulated flux analysis notebook |
 | **4** | Solar modulation & geomagnetic effects | Comparative flux plots |
 | **5** | ML for calorimeter-style shower ID | CNN / tabular baseline |
-| **6** | Integration & communication | Mini-analysis + outreach email draft |
 
 ---
 
