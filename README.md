@@ -15,10 +15,11 @@ Carlo simulation?
 ## Status
 
 This is a research foundation, not a validated AMS-02 detector simulation. The
-old Week 1 and Week 2 work is preserved under `legacy/` as educational history.
-The new package under `src/ams_qml/` currently contains only safe foundational
-pieces: particle metadata, relativistic kinematics, configuration loading, and
-ECAL segmentation metadata.
+old Week 1 and Week 2 work is preserved on the GitHub `legacy` branch as
+educational history. This branch contains the clean research foundation. The
+package under `src/ams_qml/` currently contains only safe foundational pieces:
+particle metadata, relativistic kinematics, configuration loading, and ECAL
+segmentation metadata.
 
 ## Scope
 
@@ -52,18 +53,17 @@ configuration and seeds
 - The ECAL shower generator is not implemented yet.
 - Proton response modeling is deferred until electron validation exists.
 - No ML or QML model has been trained in the reorganized package.
-- Legacy datasets and plots are historical outputs, not validated training data.
+- Archived legacy datasets and plots are historical outputs, not validated
+  training data.
 
 ## Repository Structure
 
 ```text
-configs/     Documented default configuration.
-data/        Local generated/processed/external data locations.
-docs/        Research plan, scope, simulation contract, audit, references.
-legacy/      Preserved Week 1 and Week 2 notebooks, notes, data, figures, PDFs.
-notebooks/   Future notebook sequence; notebooks import from src.
-src/ams_qml/ Clean Python package foundation.
-tests/       Foundational package/config/kinematics tests.
+configs/      Documented default configuration.
+docs/         Research plan, scope, simulation contract, audit, references.
+src/ams_qml/  Clean Python package foundation.
+tests/        Foundational package/config/kinematics tests.
+legacy branch Archived Week 1 and Week 2 notebooks, notes, data, figures, PDFs.
 ```
 
 ## Setup
@@ -90,7 +90,8 @@ git diff --check
 - Separate train, validation, and test datasets by independent campaigns or
   seeds, not only by random row splits.
 - Record provenance for generated artifacts.
-- Keep legacy outputs readable but do not treat them as validated physics.
+- Keep archived legacy outputs readable on the `legacy` branch, but do not treat
+  them as validated physics.
 
 ## Roadmap
 
@@ -109,3 +110,5 @@ git diff --check
 - [Simulation contract](docs/simulation_contract.md)
 - [Reproducibility](docs/reproducibility.md)
 - [References](docs/references.md)
+
+# NOTE: AI-assisted development tools were used for code organization, implementation support, and documentation in this project. All scientific assumptions, simulations, results, and interpretations were reviewed and validated by the author.

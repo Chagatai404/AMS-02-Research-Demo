@@ -33,7 +33,7 @@ not exhaustive, and it should be expanded as implementation work begins.
 
 ## Legacy Reading Context
 
-The preserved notes in `legacy/notes/` include summaries of AMS-02 overview,
-tracker, and status papers that motivated the original Week 1 and Week 2
-learning work. Those notes are useful context but should not replace primary
-references in the final report.
+The preserved notes on the GitHub `legacy` branch include summaries of AMS-02
+overview, tracker, and status papers that motivated the original Week 1 and
+Week 2 learning work. Those notes are useful context but should not replace
+primary references in the final report.

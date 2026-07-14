@@ -38,6 +38,7 @@ store code, configs, and small documentation needed to regenerate them.
 
 ## Legacy Outputs
 
-Legacy notebook outputs may contain machine-specific absolute paths. They are
-preserved as historical records and are not rewritten during reorganization.
-New code and new documentation should not introduce machine-specific paths.
+Legacy notebook outputs on the GitHub `legacy` branch may contain
+machine-specific absolute paths. They are preserved as historical records and
+are not rewritten during reorganization. New code and new documentation should
+not introduce machine-specific paths.

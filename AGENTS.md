@@ -48,7 +48,7 @@ Treat this roadmap as the project baseline. Do not jump to later phases simply b
 
 ### Phase 0 — Repository foundation
 
-- Preserve Week 1 and Week 2 work under `legacy/`.
+- Preserve Week 1 and Week 2 work on the GitHub `legacy` branch.
 - Establish the `src/ams_qml` package.
 - Separate code, notebooks, configuration, tests, data, generated artifacts, and documentation.
 - Add reproducible environment and test instructions.
@@ -128,7 +128,7 @@ data/
 docs/
 notebooks/
 tests/
-legacy/
+legacy branch
 ```
 
 Rules:
@@ -138,7 +138,7 @@ Rules:
 - Configuration belongs under `configs/`; do not scatter tunable physics constants across notebooks.
 - Tests belong under `tests/` and should exercise public behavior.
 - Generated data, trained models, and experiment outputs should not be committed by default.
-- Historical generated files may remain under `legacy/` for provenance.
+- Historical generated files may remain on the GitHub `legacy` branch for provenance.
 - Do not create meaningless placeholder modules containing only `pass`.
 - Do not add a QML dependency until the framework decision is made.
 
@@ -153,7 +153,8 @@ Unless the user explicitly requests otherwise:
 - If legacy logic is reused, state exactly what was migrated, what was changed, and how it was validated.
 - Do not remove historical files merely because they are large. First explain the tradeoff and obtain direction if removal would affect repository history.
 
-New work should normally avoid modifying files inside `legacy/`.
+New work should normally avoid modifying archived legacy material except on the
+dedicated GitHub `legacy` branch.
 
 ## Coding standards
 

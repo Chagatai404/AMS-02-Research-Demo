@@ -49,5 +49,5 @@ educational demonstrations as validated detector simulation.
 ## Preservation
 
 Legacy notebooks, Python exports, notes, generated CSVs, figures, and reference
-PDFs are preserved under `legacy/`. Numerical results in those files should not
-be edited except by an explicit historical-correction task.
+PDFs are preserved on the GitHub `legacy` branch. Numerical results in those
+files should not be edited except by an explicit historical-correction task.

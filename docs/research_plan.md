@@ -36,7 +36,8 @@ Goals:
 
 Completion criteria:
 
-- Legacy notebooks, notes, data, figures, and references are under `legacy/`.
+- Legacy notebooks, notes, data, figures, and references are preserved on the
+  GitHub `legacy` branch.
 - Root documentation describes the active ECAL/QML project.
 - `pyproject.toml`, `configs/`, `src/ams_qml/`, and `tests/` exist.
 - Foundational tests pass.
@@ -216,5 +217,6 @@ Project completion criteria:
 - Final report or paper-style notebook.
 
 Historical roadmap sections on flux reconstruction, solar modulation, and
-unrelated multi-species PID are preserved in `legacy/` as historical ideas, but
-they are not mandatory milestones for this focused project.
+unrelated multi-species PID are preserved on the GitHub `legacy` branch as
+historical ideas, but they are not mandatory milestones for this focused
+project.
