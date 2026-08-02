@@ -1,114 +1,64 @@
-# AMS-02 ECAL Fast-MC and QML Research Foundation
+# 🚀 AMS-02 Research Demo
 
-This repository is being reorganized into a reproducible research project for
-physics-informed AMS-02-like ECAL simulation and quantum machine-learning
-comparisons.
+This repository documents my self-guided journey to build the background and technical skills required to contribute to the **AMS-02 (Alpha Magnetic Spectrometer)** cosmic-ray experiment led by **Prof. Bilge Demirköz** at METU IVMER.  
 
-## Research Question
+The project combines **physics fundamentals**, **data science**, and **machine-learning methods** for cosmic-ray analysis and sensor data interpretation.
 
-Can quantum machine-learning classifiers provide competitive performance or
-useful generalization behavior relative to matched classical baselines for
-electron/positron versus proton classification using low-dimensional,
-physics-informed features extracted from a simplified AMS-02-like ECAL Monte
-Carlo simulation?
+---
 
-## Status
+## 📂 Repository Structure
 
-This is a research foundation, not a validated AMS-02 detector simulation. The
-old Week 1 and Week 2 work is preserved on the GitHub `legacy` branch as
-educational history. This branch contains the clean research foundation. The
-package under `src/ams_qml/` currently contains only safe foundational pieces:
-particle metadata, relativistic kinematics, configuration loading, and ECAL
-segmentation metadata.
+| Folder | Purpose |
+|--------|----------|
+| `notes/` | Written notes, summaries, and conceptual explanations of AMS-02 physics and detectors |
+| `notebooks/` | Python notebooks for simulations, analysis, and visualization |
+| `data/` | Synthetic or public datasets used for demos |
+| `figures/` | Generated plots and diagrams |
+| `references/` | Research papers, PDFs, and key resources |
 
-## Scope
+---
 
-The active project focuses on:
+## 🎯 Learning Roadmap
 
-1. A simplified AMS-02-like ECAL fast Monte Carlo.
-2. Reconstructed shower observables from an `18 x 72` energy-deposition array.
-3. Classical electron-or-positron versus proton baselines.
-4. Small-input QML experiments using the same reduced features as matched
-   classical models.
+| Week | Focus | Main Deliverable |
+|------|--------|------------------|
+| **0** | Setup, glossary, reading list | `glossary.md`, repository structure |
+| **1** | Charged-particle motion in magnetic fields | Simulated helical tracks notebook |
+| **2** | AMS-02 subsystems and feature simulation | Tabular event data + classifier |
+| **3** | From counts to flux reconstruction | Simulated flux analysis notebook |
+| **4** | Solar modulation & geomagnetic effects | Comparative flux plots |
+| **5** | ML for calorimeter-style shower ID | CNN / tabular baseline |
 
-It does not claim to be the official AMS-02 Monte Carlo, a full Geant4 detector
-model, or a validated reproduction of AMS-02 performance.
+---
 
-## Planned Workflow
+## 🧠 Background Topics
 
-```text
-configuration and seeds
-  -> physics-informed fast Monte Carlo
-  -> detector-like ECAL cell arrays
-  -> reconstruction and shower features
-  -> independent train/validation/test campaigns
-  -> classical ML baselines
-  -> matched QML experiments
-  -> systematics and Geant4/reference validation
-```
+- **Cosmic-ray composition and origins**
+- **Lorentz force & momentum–rigidity relation**
+- **Energy deposition (dE/dx) and Cherenkov radiation**
+- **Flux reconstruction and uncertainty propagation**
+- **Machine learning for particle identification**
 
-## Current Limitations
+---
 
-- The tracker repair is not implemented yet.
-- The ECAL shower generator is not implemented yet.
-- Proton response modeling is deferred until electron validation exists.
-- No ML or QML model has been trained in the reorganized package.
-- Archived legacy datasets and plots are historical outputs, not validated
-  training data.
+## 📘 Key References
 
-## Repository Structure
+- [AMS-02 Experiment – NASA Overview](https://www.nasa.gov/mission_pages/station/research/experiments/AMS-02.html)  
+- [AMS Collaboration – CERN Page](https://ams.cern/)  
+- [METU IVMER – AMS-02 Project](https://ivmer.metu.edu.tr/ams-02-ab-taek-ortakligi)  
 
-```text
-configs/      Documented default configuration.
-docs/         Research plan, scope, simulation contract, audit, references.
-src/ams_qml/  Clean Python package foundation.
-tests/        Foundational package/config/kinematics tests.
-legacy branch Archived Week 1 and Week 2 notebooks, notes, data, figures, PDFs.
-```
+---
 
-## Setup
+## 🧩 Current Goal
 
-```powershell
-python -m venv .venv
-.\\.venv\\Scripts\\Activate.ps1
-python -m pip install -e ".[dev,notebooks]"
-```
+To integrate **data cleaning, visualization, and statistical analysis** skills from my statistics bachelor's and avionics background with a deep understanding of cosmic-ray physics and AMS-02 instrumentation, ultimately contributing to **real AMS-02 data analysis** or related IVMER projects.
 
-## Tests
+---
 
-```powershell
-python -m compileall src
-python -m pytest
-git diff --check
-```
+## ✉️ Contact
 
-## Reproducibility Principles
+For collaboration inquiries or project updates, feel free to reach out via GitHub issues or email cagatayokty@gmail.com.
 
-- Use explicit YAML configuration.
-- Use deterministic `numpy.random.Generator` instances.
-- Keep generated data out of version control by default.
-- Separate train, validation, and test datasets by independent campaigns or
-  seeds, not only by random row splits.
-- Record provenance for generated artifacts.
-- Keep archived legacy outputs readable on the `legacy` branch, but do not treat
-  them as validated physics.
+---
 
-## Roadmap
-
-- Phase 0: repository reorganization and clean package foundation.
-- Phase 1: tracker propagation and signed-rigidity validation.
-- Phase 2: ECAL geometry plus electron-only `18 x 72` fast Monte Carlo.
-- Phase 3: classical baselines and proton-rejection metrics.
-- Phase 4: matched QML experiments on reduced physics-informed features.
-- Phase 5: systematics, Geant4/reference comparison, and final report.
-
-## Key Documents
-
-- [Research plan](docs/research_plan.md)
-- [Scientific scope](docs/scientific_scope.md)
-- [Legacy audit](docs/legacy_audit.md)
-- [Simulation contract](docs/simulation_contract.md)
-- [Reproducibility](docs/reproducibility.md)
-- [References](docs/references.md)
-
-# NOTE: AI-assisted development tools were used for code organization, implementation support, and documentation in this project. All scientific assumptions, simulations, results, and interpretations were reviewed and validated by the author.
+*Maintained by a statistics sophomore and avionics systems specialist passionate about cosmic-ray physics and data-driven space research.*
