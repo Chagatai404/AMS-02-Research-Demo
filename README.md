@@ -1,6 +1,7 @@
 # 🚀 AMS-02 Research Demo
 
-This repository documents my self-guided journey to build the background and technical skills required to contribute to the **AMS-02 (Alpha Magnetic Spectrometer)** cosmic-ray experiment led by **Prof. Bilge Demirköz** at METU IVMER.  
+### This repository is no longer maintained after Week 2 checkpoint. You can refer to my newer research repo: https://github.com/Chagatai404/ams-ecal-qml
+This repository documents my self-guided journey to build the background and technical skills required to contribute to the **AMS-02 (Alpha Magnetic Spectrometer)** cosmic-ray research collaboration lead by **CERN**. 
 
 The project combines **physics fundamentals**, **data science**, and **machine-learning methods** for cosmic-ray analysis and sensor data interpretation.
 
@@ -51,7 +52,7 @@ The project combines **physics fundamentals**, **data science**, and **machine-l
 
 ## 🧩 Current Goal
 
-To integrate **data cleaning, visualization, and statistical analysis** skills from my statistics bachelor's and avionics background with a deep understanding of cosmic-ray physics and AMS-02 instrumentation, ultimately contributing to **real AMS-02 data analysis** or related IVMER projects.
+To integrate **data cleaning, visualization, and statistical analysis** skills from my statistics bachelor's and avionics background with a deep understanding of cosmic-ray physics and AMS-02 instrumentation, ultimately contributing to **real AMS-02 data analysis** or related high-energy particle physics projects.
 
 ---
 
@@ -61,4 +62,4 @@ For collaboration inquiries or project updates, feel free to reach out via GitHu
 
 ---
 
-*Maintained by a statistics sophomore and avionics systems specialist passionate about cosmic-ray physics and data-driven space research.*
+*Maintained by a statistics major passionate about particle physics and data-driven quantum research.*
